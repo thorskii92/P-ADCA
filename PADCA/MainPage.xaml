@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PADCA.MainPage">
+
+    <Grid RowDefinitions="100, Auto, *" ColumnDefinitions=".75*, .25*" Padding="10" ColumnSpacing="10">
+        <Label 
+        Grid.ColumnSpan="2"
+        Text="PADCA"
+        SemanticProperties.HeadingLevel="Level1"
+        FontSize="60"
+        HorizontalOptions="Center" />
+
+        <Label
+            Grid.Row="1"
+            Grid.ColumnSpan="2"
+        Text="Welcome to .NET Multi-platform App UI"
+        SemanticProperties.HeadingLevel="Level2"
+        SemanticProperties.Description="Pagasa Atmospheric Data Collection Application"
+        FontSize="18"
+        HorizontalOptions="Center" />
+
+        <Button
+            Grid.Row="2"
+            Grid.Column="1"
+        x:Name="CounterBtn"
+        Text="Observation"
+        SemanticProperties.Hint="Start Observation"
+        Clicked="NavToObservation"
+         />
+    </Grid>
+</ContentPage>
